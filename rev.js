@@ -1204,3 +1204,70 @@ function generateOTP(limit) {
 }
 
 console.log(generateOTP(5));
+
+//try and catch error
+try {
+  console.log(win);
+} catch (error) {
+  console.log(error.message);
+}
+
+//opriona chaining
+let userrr = {
+  name: "John",
+  age: 20,
+  address: {
+    street: "123 Main St",
+    city: "Anytown",
+    state: "CA",
+    zip: "12345",
+  },
+};
+console.log(userrr.job?.title); // will not throw an error if the property does not exist
+
+console.log(userrr.address.city);
+
+//nullish coalescing operator
+let person2 = null;
+let whatsAppAvatar = person2 ?? "default avatar";
+console.log(whatsAppAvatar);
+
+let person3;
+let whatsAppAvatarr = person3 ?? "default avatar";
+console.log(whatsAppAvatarr);
+
+//asynchrounous js
+//codes that takes time to execute
+//async code
+//async code is code that is not executed immediately
+//async code is code that is executed in the background
+
+console.log("a");
+setTimeout(() => {
+  console.log("b");
+}, 10000);
+console.log("c");
+
+//API
+//Application Programming Interface
+
+//fetching data
+//geolocation
+//payment gateway
+//public private
+//rest api - GET POST PATCH DELETE
+
+const url = "https://dummyjson.com/carts";
+//fetch request async/await
+const getCarts = async () => {
+  const response = await fetch(url);
+  console.log(response);
+
+  const data = await response.json();
+
+  console.log(data);
+  console.log(data.carts[12]);
+  //displa in the browser
+};
+
+getCarts();
