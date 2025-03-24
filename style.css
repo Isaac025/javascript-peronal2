@@ -1,0 +1,30 @@
+.mybtn {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  font-size: 25px;
+  border: none;
+}
+
+.idan {
+  text-transform: uppercase;
+}
+.isaac:hover {
+  background-color: white;
+  color: blue;
+}
+
+.section {
+  background-color: blue;
+  color: white;
+  margin: 20px auto;
+  width: 400px;
+  height: 400px;
+}
+
+.section h1 {
+  text-align: center;
+}

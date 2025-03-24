@@ -1271,3 +1271,4 @@ const getCarts = async () => {
 };
 
 getCarts();
+
